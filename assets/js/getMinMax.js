@@ -15,5 +15,10 @@
  * @return {{min: number, max: number}} объект с минимумом и максимумом
  */
 function getMinMax(input) {
+    var resalt =0;
+    var i;
 
+    for (i = 4; i < 20; i++) {
+      alert( i );
+    }
 }

@@ -12,5 +12,12 @@
  * @return {number}
  */
 function multiple(a, b) {
-
+    
+    var i = 0; 
+while (i < 20) {
+  i= i  +  4
+  i++;
 }
+console.log(i);
+}
+multiple(4, 5)

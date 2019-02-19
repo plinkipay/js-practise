@@ -13,5 +13,7 @@
  * @return {string}
  */
 function capitalize(input) {
+    var arr =input.split ( " ");
+    for ( let i=0; i < arr)
 
 }

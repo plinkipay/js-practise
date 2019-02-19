@@ -12,5 +12,14 @@
  * @return {boolean}
  */
 function anagram(first, second) {
+    var arr = [ "рак" ]; // создание нового массива
+    console.log( arr );//должно выводиться 
+    var ki = [ "кар" ];
+    console.log(ki);
+    
 
 }
+anagram('кар', 'рак');
+
+/*var checked = true; // поле формы помечено галочкой
+ checked = false; // поле формы не содержит галочки*/
