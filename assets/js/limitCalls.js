@@ -19,5 +19,16 @@
  * @return {Function}
  */
 function limitCalls(fn, maxCalls) {
+    for (let j = 0; j < maxCalls; j++){
 
+    }
+var result ;
+return function(){
+    if(fn)(
+        result = fn.apply(context || this, Arr 
+            fn = null ;
+             )
+             return result;
+    )
+};
 }
