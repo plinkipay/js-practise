@@ -22,4 +22,4 @@ var input = arr.join("");
 return input;
 }
 var input = " Розовые Розы ";
-console.log ( capitalize(input));
+console.log ( capitalize(input));//сделано 

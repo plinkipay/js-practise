@@ -13,11 +13,25 @@
  */
 function multiple(a, b) {
     
-    var i = 0; 
+    /*var i = 0; 
 while (i < 20) {
   i= i  +  4
   i++;
 }
 console.log(i);
 }
-multiple(4, 5)
+multiple(4, 5)//переделать под цикл с фор*/
+ var c=1 ;
+ if (b>a);
+ {
+   b=Math.abs(b)
+  a=-a;
+ }
+ for(i=0; i<b; i++)
+ {
+   c+=a;
+ }
+ return c;
+ 
+}
+console.log(multiple(5,-3)); //вроде сделано ?но почему то на 1 меньше выдаёт ? поч ? может надо будет добавить 1 ? 
