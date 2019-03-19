@@ -18,18 +18,23 @@
  * @param  {number} maxCalls максимальное количество вызовов
  * @return {Function}
  */
+
 function limitCalls(fn, maxCalls) {
-    for (let j = 0; j < maxCalls; j++){
-put();
+    for (let j = 0; j < maxCalls; j++) {
+        Put();
     }
-var result ;
-return function() {
-    if(fn){
-        result = fn.apply(context || this, arguments);
-            fn = null ;
-    }
-             return result;
-};
+        var result;
+    
+        return function() { 
+            if(fn) {
+                result = fn.apply(context || this, arguments);
+                fn = null;
+            }
+    
+            return result;
+        };
+    
+    
 }
-var max = 4;
-console.log(limitCalls(put, max)); // put не найдет в консоли ? почему ? 
+var max = 10;
+console.log(limitCalls(Put, max));//cделано

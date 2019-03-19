@@ -21,17 +21,17 @@ while (i < 20) {
 console.log(i);
 }
 multiple(4, 5)//переделать под цикл с фор*/
- var c=1 ;
- if (b>a);
+ var c = 0;
+ if (b<0);
  {
-   b=Math.abs(b)
-  a=-a;
+   b = Math.abs(b)
+  a = -a;
  }
  for(i=0; i<b; i++)
  {
-   c+=a;
+   c += a;
  }
  return c;
  
 }
-console.log(multiple(5,-3)); //вроде сделано ?но почему то на 1 меньше выдаёт ? поч ? может надо будет добавить 1 ? 
+console.log(multiple(5,-3));//вроде сделано

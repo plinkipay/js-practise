@@ -11,15 +11,27 @@
  * @param  {string} second вторая строка
  * @return {boolean}
  */
-function anagram(first, second) {
-    var arr = [ "рак" ]; // создание нового массива
-    console.log( arr );//должно выводиться 
-    var ki = [ "кар" ];
-    console.log(ki);
+    function anagram(put, put2) {
+        var pattern = (/\s/g, "");
+
+        var put1_1 = put.toLowerCase().replace(/\s/g, ""), 
+            put2_2 = put2.replace(/\s/g, "").toLowerCase();
     
-
-}
-anagram('кар', 'рак');
-
-/*var checked = true; // поле формы помечено галочкой
- checked = false; // поле формы не содержит галочки*/
+        if (put1_1 == put2_2) return false;
+        var arr1 = put1_1.split(""), 
+            arr2 = put2_2.split("");
+    
+        var q;
+        if (arr1.length != arr2.length) return false;
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i] == arr2[j]) q = 1;
+            }
+            if (q == 1) continue;
+            else return false;
+        }
+        if (q == 1) return true;
+    }
+    
+    var put = "рак", put2 = "кар";
+    console.log(anagram(put, put2));//СДЕЛАНО
